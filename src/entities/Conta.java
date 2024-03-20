@@ -30,7 +30,7 @@ public class Conta {
 	public void deposito(double valor) {
 		if(valor > 0) {
 			this.saldo -= valor * TAXA_DE_SERVICO;
-			this.saldo += this.saldo + valor;			
+			this.saldo += valor;			
 		}
 	}
 	
