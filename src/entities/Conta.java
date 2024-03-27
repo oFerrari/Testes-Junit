@@ -34,14 +34,14 @@ public class Conta {
 		}
 	}
 	
-	public void sacar(double valor) {
+	public void saque(double valor) {
 		if(valor > saldo) {
 			throw new IllegalArgumentException();
 		}
 		this.saldo -= valor;
 	}
 	
-	public double saqueValorTotal(double valor) {
+	public double saqueValorTotal() {
 		double valorTotal = this.saldo;
 		this.saldo = 0.0;
 		return valorTotal;
